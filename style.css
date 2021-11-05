@@ -114,4 +114,7 @@ a {
   .sectionContent {
     flex-direction: column;
   }
+  footer div {
+    text-align: right;
+  }
 }
