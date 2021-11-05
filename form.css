@@ -1,0 +1,25 @@
+.label {
+  width: 100%;
+  display: block;
+}
+
+.textField {
+  width: 100%;
+  resize: none;
+  outline: none;
+}
+
+.textField:valid {
+  border: 1px solid green;
+}
+.textField:invalid {
+  border: 1px solid red;
+}
+
+.button {
+  height: 2em;
+  background-color: rgb(156, 224, 241);
+  border-color: white;
+  border-radius: 0.5em;
+  border: 1px solid #000;
+}

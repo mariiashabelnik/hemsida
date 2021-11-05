@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mariias websida</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="typography.css" />
+    <link rel="stylesheet" href="color.css" />
+    <link rel="stylesheet" href="form.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="content">
+      <header>
+        <nav class="sectionContentFill navigation">
+          <div>
+            <ul>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="experience.html">Experience</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="sizeLogo">
+            <img src="img/logo.jpeg" alt="logo" />
+          </div>
+          <div>
+            <ul class="alignRight">
+              <li>
+                <a
+                  href="https://www.facebook.com/maria.shabelnik"
+                  target="_blank"
+                  ><img
+                    class="smallIcon"
+                    src="img/iconmonstr-facebook-1.svg"
+                    alt="facebookLogo"
+                /></a>
+              </li>
+              <li>
+                <a href="https://linkedin.com" target="_blank"
+                  ><img
+                    class="smallIcon"
+                    src="img/iconmonstr-linkedin-1.svg"
+                    alt="LinkedinLogo"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <section class="sectionContentFill">
+          <div>
+            <h1 class="alignCenter">Mariia Shabelnik</h1>
+          </div>
+        </section>
+        <section class="sectionContentFill">
+          <div class="flexCols">
+            <article>
+              <h3>Please contact me</h3>
+              <form>
+                <label class="label" for="email">Email</label>
+                <input
+                  class="textField"
+                  type="email"
+                  id="email"
+                  placeholder="Please enter your email"
+                />
+
+                <label class="label" for="message">Message</label>
+                <textarea
+                  required
+                  class="textField"
+                  rows="5"
+                  id="message"
+                  placeholder="Please send a message to me"
+                ></textarea>
+                <div class="alignRight">
+                  <input class="button" type="submit" value="Send" />
+                </div>
+              </form>
+            </article>
+          </div>
+          <div class="centerImg">
+            <img src="img/logo.jpeg" alt="Mariia" />
+          </div>
+        </section>
+      </main>
+      <footer>
+        <section class="sectionContentFill borderTop">
+          <div>© 2021 Mariia Shabelnik</div>
+          <div class="alignRight">
+            <a href="mailto:info@mariia.art">info@mariia.art</a>
+          </div>
+        </section>
+      </footer>
+    </div>
+  </body>
+</html>

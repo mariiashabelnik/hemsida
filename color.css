@@ -1,0 +1,36 @@
+:root {
+  --main-bg-color: #ccc;
+  --main-fg-color: rgb(82, 82, 82);
+  --header-color: rgb(160, 160, 160);
+  --headerOne-color: rgb(0, 0, 0);
+  --a-hover-color: #000;
+}
+
+body {
+  color: var(--main-fg-color);
+}
+
+h1 {
+  color: var(--headerOne-color);
+}
+
+h2 {
+  color: var(--header-color);
+}
+
+h3 {
+  color: var(--header-color);
+}
+
+a {
+  color: var(--main-fg-color);
+}
+
+a:hover {
+  color: var(--a-hover-color);
+}
+
+.content {
+  box-shadow: 0px 10px 13px -7px #000000,
+    5px 5px 15px 5px rgba(202, 202, 202, 0) inset;
+}

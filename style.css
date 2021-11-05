@@ -1,52 +1,44 @@
-:root {
-  --main-bg-color: #ccc;
-  --main-fg-color: rgb(87, 87, 87);
-}
-
-body {
-  color: var(--main-fg-color);
-}
-
 a {
   transition: all 1s ease-out;
-  color: var(--main-fg-color);
-}
-a:hover {
-  color: aqua;
-  font-size: 2em;
 }
 
 .content {
   max-width: 960px;
   margin: auto;
-  background-color: #fff;
-  padding: 1em;
-  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0) inset;
+  padding: 2em;
+}
+
+.smallIcon {
+  height: 1em;
 }
 
 .navigation {
-  display: flex;
   margin: 1em auto;
-  justify-content: space-between;
   align-items: center;
+}
+.navigation div {
+  order: 5;
 }
 
 .navigation ul {
   padding: 0;
   list-style-type: none;
   margin: 0;
-  order: 5;
 }
 
 .navigation li {
   display: inline;
   margin: 0.5em;
 }
-
-.navigation img {
+.sizeLogo {
+  order: 5;
+}
+.sizeLogo img {
   border-radius: 2.5em;
   height: 5em;
-  order: 5;
+
+  margin: auto;
+  display: block;
 }
 
 .sectionContentFill {
@@ -93,9 +85,8 @@ a:hover {
   width: 5em;
 }
 
-.border {
+.borderTop {
   border-top: 1px solid var(--main-fg-color);
-  border-bottom: 1px solid var(--main-fg-color);
 }
 
 /* MOBILE */
@@ -110,8 +101,8 @@ a:hover {
     margin-top: 0.2em;
   }
 
-  .navigation img {
-    order: 1;
+  .sizeLogo {
+    order: 1 !important; /* Move image on top in mobile view */
   }
 
   .sectionContentFill {

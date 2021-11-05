@@ -6,32 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mariias websida</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="typography.css" />
+    <link rel="stylesheet" href="color.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="content">
       <header>
-        <nav class="navigation">
-          <ul>
-            <li>
-              <a href="experience.html">Experience</a>
-            </li>
-            <li>
-              <a href="contact.html">Contact</a>
-            </li>
-          </ul>
-          <img src="img/logo.jpeg" alt="logo" />
-          <ul>
-            <li>
-              <a href="https://www.facebook.com/maria.shabelnik">Facebook</a>
-            </li>
-            <li><a href="https://linkedin.com">LinkedIn</a></li>
-          </ul>
+        <nav class="sectionContentFill navigation">
+          <div>
+            <ul>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="experience.html">Experience</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="sizeLogo">
+            <img src="img/logo.jpeg" alt="logo" />
+          </div>
+          <div>
+            <ul class="alignRight">
+              <li>
+                <a
+                  href="https://www.facebook.com/maria.shabelnik"
+                  target="_blank"
+                  ><img
+                    class="smallIcon"
+                    src="img/iconmonstr-facebook-1.svg"
+                    alt="facebookLogo"
+                /></a>
+              </li>
+              <li>
+                <a href="https://linkedin.com" target="_blank"
+                  ><img
+                    class="smallIcon"
+                    src="img/iconmonstr-linkedin-1.svg"
+                    alt="LinkedinLogo"
+                /></a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </header>
       <main>
         <section class="sectionContentFill">
           <div>
-            <h1 class="alignCenter">Lorem ipsum dolor sit .</h1>
+            <h1 class="alignCenter">Mariia Shabelnik</h1>
           </div>
         </section>
         <section class="sectionContentFill">
@@ -39,22 +70,26 @@
             <article>
               <h3>BIOGRAPHY</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-                molestiae officia ut pariatur, libero in?
+                Work for money and design for love! I'm Mariia, an Frontend
+                developer with art background.
               </p>
             </article>
             <article>
               <h3>CONTACT</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-                molestiae officia ut pariatur, libero in?
+                Stockholm, Sweden
+                <br />
+                info@mariia.art
+                <br />
+                +46 721 831483
               </p>
             </article>
             <article>
               <h3>SERVICES</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-                molestiae officia ut pariatur, libero in?
+                Website Design
+                <br />
+                Mobile Application Design
               </p>
             </article>
           </div>
@@ -64,71 +99,83 @@
           <div class="flexCols alignRight">
             <article>
               <h3>YEARS OF EXPERIENCE</h3>
-              <p>
-                1
-              </p>
+              <p>1</p>
             </article>
             <article>
               <h3>STISFITATION CLIENTS</h3>
-              <p>
-                100%
-              </p>
+              <p>100%</p>
             </article>
+
             <article>
-              <h3>BIOGRAPHY</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-                molestiae officia ut pariatur, libero in?
-              </p>
-            </article>
-            <article>
-              <h3>BIOGRAPHY</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-                molestiae officia ut pariatur, libero in?
-              </p>
+              <h3>PROJECTS DONE</h3>
+              <p>5</p>
             </article>
           </div>
         </section>
-        <div class="border">
-          <section class="sectionContentFill">
-            <div>
-              <h2 class="alignCenter">Lorem ipsum dolor sit .</h2>
-            </div>
-          </section>
-          <section class="sectionContent">
-            <article class="icon">
-              <figure class="alignCenter">
-                <img src="img/Adobe_Photoshop_CC_icon.svg" alt="PS_logo" />
-                <figcaption>PS</figcaption>
-                <p>10%</p>
-              </figure>
-            </article>
-            <article class="icon">
-              <figure class="alignCenter">
-                <img src="img/Adobe_Photoshop_CC_icon.svg" alt="PS_logo" />
-                <figcaption>PS</figcaption>
-                <p>10%</p>
-              </figure>
-            </article>
-            <article class="icon">
-              <figure class="alignCenter">
-                <img src="img/Adobe_Photoshop_CC_icon.svg" alt="PS_logo" />
-                <figcaption>PS</figcaption>
-                <p>10%</p>
-              </figure>
-            </article>
-            <article class="icon">
-              <figure class="alignCenter">
-                <img src="img/Adobe_Photoshop_CC_icon.svg" alt="PS_logo" />
-                <figcaption>PS</figcaption>
-                <p>10%</p>
-              </figure>
-            </article>
-          </section>
-        </div>
+
+        <section class="sectionContentFill borderTop">
+          <div>
+            <h2 class="alignCenter">My skills</h2>
+          </div>
+        </section>
+        <section class="sectionContent">
+          <article class="icon">
+            <figure class="alignCenter">
+              <img src="img/Adobe_Photoshop_CC_icon.svg" alt="PS_logo" />
+              <figcaption>Adobe PS</figcaption>
+              <br />
+              <p>50%</p>
+            </figure>
+          </article>
+          <article class="icon">
+            <figure class="alignCenter">
+              <img src="img/icons8-3ds-max.svg" alt="3DsMax_logo" />
+              <figcaption>3DsMax</figcaption>
+              <br />
+              <p>80%</p>
+            </figure>
+          </article>
+          <article class="icon">
+            <figure class="alignCenter">
+              <img src="img/icons8-adobe-xd.svg" alt="XD_logo" />
+              <figcaption>Adobe XD</figcaption>
+              <p>80%</p>
+            </figure>
+          </article>
+          <article class="icon">
+            <figure class="alignCenter">
+              <img src="img/icons8-html-5.svg" alt="Html_logo" />
+              <figcaption>HTML</figcaption>
+              <br />
+              <p>50%</p>
+            </figure>
+          </article>
+          <article class="icon">
+            <figure class="alignCenter">
+              <img src="img/icons8-css3.svg" alt="CSS_logo" />
+              <figcaption>CSS</figcaption>
+              <br />
+              <p>40%</p>
+            </figure>
+          </article>
+          <article class="icon">
+            <figure class="alignCenter">
+              <img src="img/icons8-figma.svg" alt="Figma_logo" />
+              <figcaption>Figma</figcaption>
+              <br />
+              <p>60%</p>
+            </figure>
+          </article>
+        </section>
       </main>
-      <footer></footer>
+      <footer>
+        <section class="sectionContentFill borderTop">
+          <div>© 2021 Mariia Shabelnik</div>
+          <div class="alignRight">
+            <a href="mailto:info@mariia.art">info@mariia.art</a>
+          </div>
+        </section>
+      </footer>
     </div>
   </body>
 </html>
