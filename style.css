@@ -1,12 +1,32 @@
+:root {
+  --main-bg-color: #ccc;
+  --main-fg-color: rgb(87, 87, 87);
+}
+
+body {
+  color: var(--main-fg-color);
+}
+
+a {
+  transition: all 1s ease-out;
+  color: var(--main-fg-color);
+}
+a:hover {
+  color: aqua;
+  font-size: 2em;
+}
+
 .content {
   max-width: 960px;
   margin: auto;
-
-  border: 1px dashed springgreen;
+  background-color: #fff;
+  padding: 1em;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0) inset;
 }
 
 .navigation {
-  display: flex; /* or inline-flex */
+  display: flex;
+  margin: 1em auto;
   justify-content: space-between;
   align-items: center;
 }
@@ -25,11 +45,60 @@
 
 .navigation img {
   border-radius: 2.5em;
-
   height: 5em;
   order: 5;
 }
 
+.sectionContentFill {
+  margin: 1em auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.sectionContentFill div {
+  flex: 1;
+}
+
+.flexCols {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.alignCenter {
+  text-align: center;
+}
+
+.alignRight {
+  text-align: right;
+}
+
+.centerImg {
+  margin: auto 0.7em;
+}
+
+.centerImg img {
+  display: block;
+  width: 100%;
+}
+
+.sectionContent {
+  margin: 1em auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.icon img {
+  width: 5em;
+}
+
+.border {
+  border-top: 1px solid var(--main-fg-color);
+  border-bottom: 1px solid var(--main-fg-color);
+}
+
+/* MOBILE */
 @media screen and (max-width: 480px) {
   .navigation {
     flex-direction: column;
@@ -43,5 +112,12 @@
 
   .navigation img {
     order: 1;
+  }
+
+  .sectionContentFill {
+    flex-direction: column;
+  }
+  .sectionContent {
+    flex-direction: column;
   }
 }
