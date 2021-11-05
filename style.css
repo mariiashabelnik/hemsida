@@ -79,10 +79,11 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .icon img {
-  width: 5em;
+  width: 4em;
 }
 
 .borderTop {
@@ -104,7 +105,9 @@ a {
   .sizeLogo {
     order: 1 !important; /* Move image on top in mobile view */
   }
-
+  .icon img {
+    width: 8em;
+  }
   .sectionContentFill {
     flex-direction: column;
   }
